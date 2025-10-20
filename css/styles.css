@@ -264,6 +264,19 @@ footer p a:hover{
     font-size: 10px;
 
   }
+  .login{
+    width: 50%;
+  }
+  .login h2{
+    font-size: 1.5em;
+
+  }
+  .login form{
+    width: 80%;
+  }
+  .login button{
+    width:50%;
+  }
 }
 @media screen and (max-width: 480px) {
   header .header-button {
