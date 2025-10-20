@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPO Management</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/favicons/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="../images/logo/logo.png" alt="BPO Management Logo"></a>
+            <h1>BPO Management Software</h1>
+        </div>
+        <!-- <form class="search-box">
+            <input type="text" placeholder=" "/>
+            <button type="reset"></button>
+        </form> -->
+        <!-- <a href="../accounts/login.html"><button class="header-button">Login</button></a> -->
+        <a href="profile.html"> <p>Welcome Admin</p></a>
+    </header>
+    <div class="admin_dashboard">
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <div class="dashboard-options">
+                <a href="#dashboard" class="dashboard-button active"><button>☰ Dashboard</button></a>
+                <a href="#manager-list" class="dashboard-button"><button>👨‍💼 Manager List</button></a>
+                <a href="#leads-list" class="dashboard-button"><button>📝 Leads List</button></a>
+                <a href="#telecallers-list" class="dashboard-button"><button>🎧 Telecallers List</button></a>
+                <a href="#reports" class="dashboard-button"><button>📊 View Reports</button></a>
+                <a href="#settings" class="dashboard-button"><button>⚙️ Settings</button></a>
+                <a href="../index.html" class="dashboard-button"><button>Logout ➜</button></a>
+            </div>
+        </div>
+
+        <!-- dashboard overview -->
+        <div id="dashboard" class="section active-section">
+            <h2>Dashboard Overview</h2>
+            <p>Welcome to the admin dashboard. Here you can manage users, view reports, and adjust settings.</p>
+        </div>
+
+        <!-- Manager list -->
+        <div id="manager-list" class="section">
+            <h2>Manager List</h2>
+            <table class="table table-striped">
+                <tr>
+                    <th>Manager ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>9876543210</td>
+                    <td>Edit | Delete</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Leads Section -->
+        <div id="leads-list" class="section">
+            <h2>Leads List</h2>
+            <table class="table table-striped">
+                <tr>
+                    <th>Lead ID</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Jane Smith</td>
+                    <td>fnedsuh</td>
+                    <td>New</td>
+                    <td>Edit | Delete</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Telecallers Section -->
+        <div id="telecallers-list" class="section">
+            <h2>Telecallers List</h2>
+            <table class="table table-striped">
+                <tr>
+                    <th>Telecaller ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>Mike Johnson</td>
+                    <td>vbdhdsjk</td>
+                    <td>8765432109</td>
+                    <td>Edit | Delete</td>
+                </tr>
+            </table>
+
+    </div>
+    <!-- View reports -->
+        <div id="reports" class="section">
+            <h2 style="margin: 5%;">View Reports</h2>
+            <!-- <p>Generate and view various reports related to BPO operations.</p> -->
+            <div class="boxes">
+                 <div class="report-boxes">
+                    <h3>Manager</h3>
+                    <a href=""><button>Weekly</button></a> 
+                    <a href=""><button>Monthly</button></a>
+                    <a href=""><button>Total</button></a>
+                </div>
+                <div class="report-boxes">
+                    <h3>Telecaller</h3>
+                    <a href=""><button>Weekly</button></a> 
+                    <a href=""><button>Monthly</button></a>
+                    <a href=""><button>Total</button></a>
+                </div>
+                <div class="report-boxes">
+                    <h3>Leads</h3>
+                   <a href=""><button>Weekly</button></a> 
+                    <a href=""><button>Monthly</button></a>
+                    <a href=""><button>Total</button></a>
+                </div>
+            </div>
+            
+        </div>
+        <div id="settings" class="section">
+            <h2>Settings</h2>
+
+            <div class="profile">
+                <div class="profile-details">
+                    <p>Username: <strong>Admin</strong></p>
+                    <p>Password: <strong>Admin</strong></p>
+                    <p>Email: <strong>Admin@gmail.com</strong></p>
+                    <p>Company: <strong>ABC Pvt Ltd</strong></p>
+                    <a href=""><button>Change Password</button></a>
+                    
+                </div>
+                <div class="profile-img">
+                    <img src="../images/profile_pic/profile.png" alt="Profile">
+                    <a href=""><button>Change Photo</button></a>
+                </div>
+            </div>
+
+
+        </div>
+    <footer>
+        <p>&copy; 2025 BPO Management. All rights reserved. Made by <a href="#">Acecoders</a></p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

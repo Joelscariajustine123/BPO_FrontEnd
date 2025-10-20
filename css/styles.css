@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+/* For every page */
 html,
 body {
   font-family: Raleway, sans-serif;
@@ -12,6 +13,8 @@ body {
 body {
   background-color: #e1fff7;
 }
+
+/* Header section for every pages */
 header {
     background: #016B61;
   display: flex;
@@ -124,8 +127,21 @@ header .header-button:hover {
   transform: scale(1.05);
 transition: transform 0.3s ease;
 }
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    color: gold;
+    text-decoration: underline;
+}
 
 
+/* end of header section */
+
+/* Body content starts */
+
+/* Home page */
 .content{
     display: flex;
     justify-content: center;
@@ -167,7 +183,9 @@ transition: transform 0.3s ease;
   transform: scale(1.05);
 transition: transform 0.3s ease;
 }
+/* End of home page */
 
+/* Login Page */
 .login{
     text-align: center;
     margin-top: 5%;
@@ -222,11 +240,179 @@ transition: transform 0.3s ease;
   transform: scale(1.05);
 transition: transform 0.3s ease;
 }
+/* End of login page */
 
+/* admin dashboard page */
 
+.admin_dashboard{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+}
+.admin_dashboard .sidebar{
+    background-color: #70B2B2;
+    height: 100vh;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    color: white;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.admin_dashboard .sidebar h2{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+}
+.admin_dashboard .sidebar .dashboard-options{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    width: 100%;
+}
 
+.admin_dashboard .sidebar .dashboard-options .dashboard-button button{
+    color: gold;
+    width: 100%;
+    background-color: #e1fff7;
+    text-decoration: none;
+    font-size: 1.2em;
+    height: 50px;
+    
+}
 
+.admin_dashboard .sidebar .dashboard-options .dashboard-buttons:hover{
+    color: gold;
+    text-decoration: underline;
+}
+.admin_dashboard .sidebar .dashboard-options .dashboard-button button:hover{
+    background: #016B61;
+    color: white;
+    transform: scale(0.9);
+    border-color: gold;
+}
 
+.dashboard-button.active button {
+  background-color: #4CAF50; /* green highlight */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.section {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+.dashboard-button.active button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  transform: scale(0.95);
+  border-color: gold;
+}
+#reports .boxes{
+  display: flex;
+}
+#reports .report-boxes{
+  background-color:#e1fff7 ;
+  padding: 10px;
+  padding-top: 2%;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  box-shadow: #016B61;
+  border-radius: 10px;
+  margin: 5%;
+}
+#reports .report-boxes:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.report-boxes h3{
+    color: #016B61;
+    margin-bottom: 20px;
+}
+.report-boxes a button{
+  background-color: #016b6070;
+  border-radius: 10px;
+  width: 40%;
+}
+#settings h2{
+  padding: 20px;
+}
+#settings p{
+  margin-left: 20px;
+}
+
+.profile{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.profile .profile-details{
+  width: 45%;
+  padding: 40px;
+  margin-top: 7%;
+}
+.profile .profile-details button{
+  background-color:#e1fff7 ;
+  border: 2px solid gold;
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 20px;
+}
+.profile .profile-details:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+.profile .profile-details button:hover{
+    background: #016B61;
+    color: white;
+    transform: scale(1.05);
+    border-color: gold;
+}
+.profile .profile-img{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 50%; */
+}
+.profile-img img{
+  border-radius: 50%;
+  width: 35%;
+  height: auto;
+}
+.profile .profile-img button{
+  background-color:#e1fff7 ;
+  border: 2px solid gold;
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+}
+.profile .profile-img button:hover{
+    background: #016B61;
+    color: white;
+    transform: scale(1.05);
+    border-color: gold;
+}
+/* end of admin dashboard */
+
+/* Footer section of each page */
 footer {
   background-color: #016B61;
   color: #ffffff;
@@ -275,7 +461,7 @@ footer p a:hover{
     width: 80%;
   }
   .login button{
-    width:50%;
+    width:50%; 
   }
 }
 @media screen and (max-width: 480px) {
