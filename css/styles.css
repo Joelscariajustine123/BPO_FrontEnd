@@ -316,6 +316,12 @@ transition: transform 0.3s ease;
   transform: scale(0.95);
   border-color: gold;
 }
+.heading{
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
 #reports .boxes{
   display: flex;
 }
