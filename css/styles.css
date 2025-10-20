@@ -200,7 +200,7 @@ footer p a:hover{
     flex-direction: column;
     height: auto;
     text-align: center;
-    /* width: 100%; */
+    width: 160%;
   }
   .content {
     flex-direction: column;
@@ -210,7 +210,7 @@ footer p a:hover{
     width: 90%;
   }
   footer{
-    font-size: 14px;
+    font-size: 10px;
 
   }
 }
